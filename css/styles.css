@@ -67,7 +67,11 @@ body {
 .header {
     background: var(--background-color);
     border-bottom: 1px solid var(--border-color);}
-.header-logo {margin-right: 76px;}
+.header-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;}
 .header-link li {
     margin: right 40px;}
 .header-navigation {
@@ -75,13 +79,12 @@ body {
     align-items: center;}
 .header-list {
     display: flex;
-    gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;}
+    gap: 40px;}
 .header-link { 
     font-weight: 500;
     color: inherit;
     text-decoration: none;
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;}
 .header-link:is(:hover, :focus) { 
@@ -91,8 +94,11 @@ body {
     margin-left: auto;
     gap: 40px;}
 .mail-link, .tel-link {
+    display: block;
     color: inherit;
-    text-decoration: none}
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;}
 .mail-link:is(:hover, :focus) {
     color: var(--pressed-state-color);}
 .tel-link:is(:hover, :focus) {
@@ -100,7 +106,7 @@ body {
 /*---------Hiro-Section---------*/
 .hiro {
     background: var(--title-color);
-    padding: 188px;}
+    padding: 188px 0;}
 .hiro-title {
     color: var(--background-color);
     text-align: center;
@@ -108,8 +114,8 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-bottom: 48px;
     margin: 0 auto;
+    margin-bottom: 48px;
     width: 496px;
 }
 
