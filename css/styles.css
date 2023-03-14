@@ -148,15 +148,19 @@ body {
     flex-basis: auto;
     gap: 24px;}
 .advantages-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;}
 .advantages-text {
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;}
 
 /*---------Examples-Section---------*/
+.examples {
+    padding-top: 0;}
 .examples-list {
     display: flex;
     gap: 24px;}
@@ -165,7 +169,7 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    padding-bottom: 72px;}
+    margin-bottom: 72px;}
 
 /*---------Team-Section---------*/
 .team {
@@ -180,14 +184,19 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    padding-bottom: 72px;}
+    margin-bottom: 72px;}
 .team-item {
-    background: var(--background-color);}
+    background: var(--background-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-item-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;}
+    text-align: center;
+    margin-bottom: 8px;}
 .team-item-cards {
     padding: 32px;}
 .team-item-text {
@@ -197,6 +206,7 @@ body {
     text-align: center;}
 
 /*---------Portfolio-Section---------*/
+.portfolio {padding-top: 0;}
 .portfolio-btn {
     cursor: pointer;
     color: var(--brand-color);
@@ -217,6 +227,7 @@ body {
 }
 
 .portfolio-btn:is(:hover, :focus) {
+    border: 0 transparent;
     color: var(--background-color);
     background-color: var(--pressed-state-color);}
 
@@ -225,18 +236,21 @@ body {
     justify-content: center;
     flex-basis: auto;
     gap: 24px;
-    padding-bottom: 72px;}
+    padding-top: 96px;
+  margin-bottom: 72px;}
 
 /*---------Buttons-Section---------*/
 .projects-cards { 
     padding: 32px 16px;
-    border-bottom: 2px solid var(--border-color);
-    border-right: 2px solid var(--border-color);
-    border-left: 2px solid var(--border-color);}
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);}
 .projects-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;}
 .projects-text {
     line-height: 1.5;
     letter-spacing: 0.02em;}
@@ -247,13 +261,11 @@ body {
     gap: 48px 24px;}
 /*---------Futer---------*/
 .footer {
-    background:var(--title-color);}
+    background:var(--title-color);
+    padding: 100px}
 .footer-title {
     width: 264px;
     color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top:  17px;}
-.footer-conteiner {
-    padding: 100px 15px;
-}
